@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./markdown.css";
+
+* {
+  font-family: "Hind";
+}
+
+body {
+  @apply dark:bg-black dark:text-white;
+}
+
+.gradient-circle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  top: -30px;
+  height: 40px;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    rgba(248, 107, 223, 1) 0%,
+    rgba(107, 107, 248, 0.8) 100%
+  );
+}
+.gradient-circle-bottom {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  bottom: -20px;
+  height: 30px;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    rgba(248, 107, 223, 1) 0%,
+    rgba(107, 107, 248, 0.8) 100%
+  );
+}
+
+.gradient-shadow:hover::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #45caff 0%, #ff1b6b 100%);
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(20px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.gradient-shadow:hover::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+#bullet {
+  margin-left: 5%;
+}
+
+input {
+  margin-left: 10px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin: auto;
+  display: flex;
+}
+
+.card-container {
+  padding: 10px 5px;
+  margin: auto;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  position: relative;
+  background-color: #bd6ce3;
+  color: white;
+  width: 70%;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-color: #bd6ce3;
+  margin: 0;
+  padding: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 8px;
+  width: 70%;
+  margin-bottom: 8px;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+}
+
+input::placeholder {
+  color: #bd6ce3;
+}
+
+.catPhoto {
+  border-radius: 16px;
+  display: block;
+  width: auto;
+  height: 30vb;
+  max-height: 20vb;
+  max-width: 20vb;
+}
+
+.recipe-img {
+  height: 20vb;
+  width: 20vb;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.recipeCategory {
+  color: #bd6ce3;
+}
+
+.col {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.col div {
+  width: 50%;
+  padding: 10px;
+  flex: 2;
+  width: 80%;
+}
+
+.col div:nth-child(1) {
+  flex: 1;
+}
+
+.col-r div {
+  flex: 1;
+}
+
+.col-r div:nth-child(1) {
+  flex: 2;
+}
+
+@media screen and (max-width: 990px) {
+  .col {
+    flex-wrap: wrap;
+  }
+  .col div {
+    flex-basis: 100%;
+  }
+  .col-r div {
+    order: 1;
+    -webkit-order: 1;
+  }
+  .col-r div:nth-child(1) {
+    order: 2;
+    -webkit-order: 2;
+  }
+}

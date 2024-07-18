@@ -1,0 +1,82 @@
+{
+  "name": "Isaiah",
+  "headerTaglineOne": "Hello 👋",
+  "headerTaglineTwo": "I'm Isaiah - a curious",
+  "headerTaglineThree": "cross-platform developer",
+  "headerTaglineFour": " based in Indiana, USA",
+  "showCursor": false,
+  "showBlog": false,
+  "darkMode": true,
+  "showResume": true,
+  "socials": [
+    { "id": "1", "title": "Github", "link": "https://github.com/young-hnau" },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/isaiah-ritter-7b7a86104"
+    },
+    { "id": "3", "title": "Email", "link": "mailto:hello@hnau.dev" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Bethel University Mobile Application",
+      "description": "Flutter Application for Bethel University Students and Staff",
+      "imageSrc": "https://betheluniversity.edu/wp-content/uploads/2023/02/cropped-bu_icon.png",
+      "url": "https://apps.apple.com/us/app/bethel-university-indiana/id1469559616"
+    },
+    {
+      "id": "2",
+      "title": "Maize",
+      "description": "Flutter Application for Mealie: a Self-Hosted Recipe Manager",
+      "imageSrc": "https://github.com/young-hnau/maize/raw/master/assets/maize_logo.png",
+      "url": "https://github.com/young-hnau/maize"
+    }
+  ],
+  "services": [
+    {
+      "id": "1d11f954-dd98-472a-be51-7f8d3ffe227b",
+      "title": "Mobile App Development",
+      "description": "I write high-quality, cross-platform mobile applications using Flutter, RESTful APIs and various cloud services."
+    }
+  ],
+  "aboutpara": "I am a young cross-platform mobile application developer with a passion for learning and building high-quality software. While Flutter is my Framework of choice, I enjoy using and learning new tools to accomplish my goals. I am a quick learner and a productive worker; pushing functional and intuitive software to consumers.",
+  "resume": {
+    "tagline": "👋  I'm a cross-platform software engineer.",
+    "description": "I have delivered a high-quality mobile application to Bethel University for use by their students and staff. I am currently developing Maize: a cross-application for a self-hosted recipe manager.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "March 2018 - Present",
+        "type": "Contract",
+        "position": "Lead Mobile App Developer",
+        "bullets": "Flutter, RESTful APIs, GIT, GCP"
+      }
+    ],
+    "education": [
+      {
+        "id": "1",
+        "universityName": "Bethel University (Indiana)",
+        "universityDate": "2016-2019",
+        "universityPara": "First portion of a 3-2 program with University of Notre Dame. Received a BS in Math/Physics."
+      },
+      {
+        "id": "2",
+        "universityName": "University of Notre Dame",
+        "universityDate": "2019-2021",
+        "universityPara": "Second portion of a 3-2 program with Bethel University. Received a BS in Computer Science."
+      }
+    ],
+    "languages": [
+      "Javascript",
+      "HTML5",
+      "CSS",
+      "Python",
+      "Dart",
+      "C++",
+      "Swift"
+    ],
+    "frameworks": ["React", "Flutter"],
+    "others": ["Sketch", "AWS", "GCP"]
+  }
+}
